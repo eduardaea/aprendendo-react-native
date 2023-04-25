@@ -1,8 +1,8 @@
 import { createStackNavigator } from '@react-navigation/stack';
 import { Home } from './app/components/home';
-import { Screen2 } from './app/components/screen2';
+import { Game1 } from './app/components/game1';
 import { NavigationContainer } from '@react-navigation/native';
-import { Example } from './app/components/teste';
+import { ButtonComponent } from './app/components/button';
 
 const Stack = createStackNavigator();
 
@@ -11,8 +11,8 @@ const App = () => {
     <NavigationContainer>
       <Stack.Navigator>
         <Stack.Screen name="Home" component={Home} />
-        <Stack.Screen name="Screen2" component={Screen2} />
-        <Stack.Screen name="Exemplo" component={Example}/>
+        <Stack.Screen name="Game1" component={Game1} />
+        <Stack.Screen name="Exemplo" component={ButtonComponent}/>
       </Stack.Navigator>
     </NavigationContainer>
   );

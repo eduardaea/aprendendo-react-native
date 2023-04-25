@@ -1,7 +1,11 @@
 import { StyleSheet,Image } from 'react-native';
-import { Center, NativeBaseProvider,View } from 'native-base';
+import { NativeBaseProvider,View } from 'native-base';
+import { Api } from "../services/api"
 
-export const Screen2= () => {
+export const Game1= () => {
+
+  // const words = Api();
+  
     return<NativeBaseProvider>
       <View style={styles.container}>
         <Image source={{uri:'https://reactnative.dev/docs/assets/p_cat2.png',}}style={styles.imageTeste}/>
